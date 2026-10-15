@@ -3,10 +3,11 @@
 ## Description
 Set of scripts for simple automation task on XCP-NG hypervisor. Each script outputs structured JSON for easy integration with scripts and automation workflows.
 Example: 
+Run:
 ```python
 python vm_get_network.py
 ```
-Output: 
+Expected output: 
 ```bash
 {
   "success": true,
@@ -23,18 +24,6 @@ Output:
       "network": {
         "name": "public-network",
         "uuid": "11111111-aaaa-4bbb-8ccc-222222222222"
-      },
-      "currently_attached": true,
-      "mtu": 1500
-    },
-    {
-      "device": "eth1",
-      "device_number": 1,
-      "uuid": "bbbbbbbb-cccc-4ddd-8eee-ffffffffffff",
-      "mac_address": "02:00:00:00:00:02",
-      "network": {
-        "name": "private-lan",
-        "uuid": "33333333-aaaa-4bbb-8ccc-444444444444"
       },
       "currently_attached": true,
       "mtu": 1500
